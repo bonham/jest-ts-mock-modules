@@ -35,7 +35,9 @@ npm run test
 
 # Notes
 * You could use jest.spyOn(...) everywhere where method.mockImplementation() is used.
-* jest.spyOn() 
-References
+* jest.spyOn()
+
+# References
+
 * https://jestjs.io
 * https://www.typescriptlang.org/docs/
