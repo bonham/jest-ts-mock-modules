@@ -8,7 +8,7 @@ I am using the [cross-fetch](https://www.npmjs.com/package/cross-fetch), a libra
 
 When reading the documentation on https://jestjs.io I found it too difficult to put all pieces together ( As of January 2023). Thefore I created these examples with the focus of simplicity.
 
-# Description of typescript examples
+# Typescript examples
 
 | File          | Description       |
 |---------------|-------------------|
