@@ -1,3 +1,5 @@
+// Shows how `jest.mock('<module_name'>)` immediately replaces any exported object with a mock function jest.fn()
+
 import { jest, test, expect, describe } from '@jest/globals'
 jest.mock('cross-fetch') // Replace all exports with empty mock functions
 import fetch, { Headers } from 'cross-fetch'

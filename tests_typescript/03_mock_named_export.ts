@@ -1,3 +1,6 @@
+// All exported objects from cross-fetch are replaced with mock functions.
+// An implementation is only defined for the named export of 'Headers' class.
+
 import { jest, test, expect } from '@jest/globals'
 jest.mock('cross-fetch') // Replace all exports with empty mock functions
 import { Headers } from 'cross-fetch'

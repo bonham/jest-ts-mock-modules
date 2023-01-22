@@ -1,8 +1,10 @@
+// All exported objects from cross-fetch have their original implementation, except the default export 'fetch' 
+
 import { jest, test, expect } from '@jest/globals'
 import fetch, { Response } from 'cross-fetch'
 
 jest.mock('cross-fetch',() => {
-  const originalModule = jest.requireActual<typeof import('cross-fetch')>('cross-fetch')
+  const originalModule = jest.requireActual('cross-fetch')
 
   return {
     __esModule: true,
@@ -11,7 +13,6 @@ jest.mock('cross-fetch',() => {
   }
 
 })
-const mockedFetch = jest.mocked(fetch)
 
 test('Only mock fetch', async () => {
 
@@ -21,7 +22,7 @@ test('Only mock fetch', async () => {
     { status: 404 })
 
   // Fetch is mocked per test
-  mockedFetch.mockImplementation((...args: any) :any => {
+  fetch.mockImplementation((...args) => {
     return mockResult
   })
 

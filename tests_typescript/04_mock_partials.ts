@@ -1,3 +1,7 @@
+// All exported objects from cross-fetch are replaced with mock functions.
+// The original implementation is restored for the 'Response' class.
+// A custom implementation has been defined for the default exported 'fetch' function
+
 import { jest, test, expect } from '@jest/globals'
 
 jest.mock('cross-fetch') // Replace all exports with empty mock functions
