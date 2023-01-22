@@ -5,7 +5,7 @@ const mockedFetch = jest.mocked(fetch) // Adds mock methods to the mock function
 
 test('Mock fetch', async () => {
 
-  // We manually need to mock the response
+  // We need to mock  the response manually
   const fakeResponse = {
     status: 200,
     ok: true
@@ -15,7 +15,7 @@ test('Mock fetch', async () => {
     return fakeResponse
   })
 
-  const response = await fetch("https://google.com")
+  const response = await fetch("https://httpbin.org/status/404")
   expect(response.status).toBe(200)
   expect(response.ok).toBeTruthy()
 

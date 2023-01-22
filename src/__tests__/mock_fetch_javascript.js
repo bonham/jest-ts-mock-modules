@@ -14,7 +14,7 @@ test('Mock fetch method - javascript', async () => {
     return fakeResponse
   })
 
-  const response = await fetch("https://google.com")
+  const response = await fetch("https://httpbin.org/status/404")
   expect(response.status).toBe(200)
   expect(response.ok).toBeTruthy()
 
