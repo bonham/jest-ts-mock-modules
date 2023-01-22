@@ -1,16 +1,17 @@
 import { jest, test, expect } from '@jest/globals'
-jest.mock('cross-fetch')
+jest.mock('cross-fetch') // Replace all exports with empty mock functions
 import fetch from 'cross-fetch'
+const mockedFetch = jest.mocked(fetch) // Adds mock methods to the mock functions
 
-test('Mock fetch method - javascript', async () => {
+test('Mock fetch', async () => {
 
-  // We need to mock the Response object manually
+  // We need to mock  the response manually
   const fakeResponse = {
     status: 200,
     ok: true
   }
 
-  fetch.mockImplementation(()=>{
+  mockedFetch.mockImplementation((...args : any) : any =>{
     return fakeResponse
   })
 

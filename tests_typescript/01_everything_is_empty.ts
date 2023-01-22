@@ -1,5 +1,5 @@
 import { jest, test, expect, describe } from '@jest/globals'
-jest.mock('cross-fetch')
+jest.mock('cross-fetch') // Replace all exports with empty mock functions
 import fetch, { Headers } from 'cross-fetch'
 
 describe("No mock implementation", () => {

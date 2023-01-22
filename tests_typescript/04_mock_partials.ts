@@ -1,6 +1,6 @@
 import { jest, test, expect } from '@jest/globals'
 
-jest.mock('cross-fetch')
+jest.mock('cross-fetch') // Replace all exports with empty mock functions
 import fetch, { Response } from 'cross-fetch'
 
 // Adding mock methods to the mock functions
