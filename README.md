@@ -1,6 +1,6 @@
-# How to mock external
+# How to mock modules with jest
 
-This repository is showing examples how to mock a module using jest. It is about modules which were installed into node_modules via package manager. There are few javascript examples but also the more challenging typescript examples. You can find the examples within a list of tests in directories [`tests_javascript`](tests_javascript) and [`tests_typescript`](tests_typescript).
+This repository is showing examples how to mock a module using jest. It is about modules which were installed into node_modules via package manager. There are few javascript examples but also the more challenging **typescript** examples. You can find the examples within a list of tests in directories [`tests_javascript`](tests_javascript) and [`tests_typescript`](tests_typescript).
 
 I am using the [cross-fetch](https://www.npmjs.com/package/cross-fetch), a library similar to node-fetch, but with better typescript support. The library has a default_export as well as named exports.
 
@@ -36,7 +36,7 @@ npm run test
 
 # Notes
 * You could use jest.spyOn(...) everywhere where method.mockImplementation() is used.
-
+* jest.spyOn() 
 References
-* Jest page
-* Typescript page
+* https://jestjs.io
+* https://www.typescriptlang.org/docs/
