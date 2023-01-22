@@ -1,18 +1,18 @@
-// All exported objects from cross-fetch are replaced with mock functions.
+// All exported objects from node-fetch are replaced with mock functions.
 // The original implementation is restored for the 'Response' class.
 // A custom implementation has been defined for the default exported 'fetch' function
 
 import { jest, test, expect } from '@jest/globals'
 
-jest.mock('cross-fetch') // Replace all exports with empty mock functions
-import fetch, { Response } from 'cross-fetch'
+jest.mock('node-fetch') // Replace all exports with empty mock functions
+import fetch, { Response } from 'node-fetch'
 
 // Adding mock methods to the mock functions
 const mockedFetch = jest.mocked(fetch)
 const MockedResponse = jest.mocked(Response)
 
 // requireActual needs to know the type
-const originalModule = jest.requireActual<typeof import('cross-fetch')>('cross-fetch')
+const originalModule = jest.requireActual<typeof import('node-fetch')>('node-fetch')
 
 test('Mock the fetch function, but use original implementation of Response', async () => {
 

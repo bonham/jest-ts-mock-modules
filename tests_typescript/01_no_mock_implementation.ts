@@ -1,8 +1,8 @@
 // Shows how `jest.mock('<module_name'>)` immediately replaces any exported object with a mock function jest.fn()
 
 import { jest, test, expect, describe } from '@jest/globals'
-jest.mock('cross-fetch') // Replace all exports with empty mock functions
-import fetch, { Headers } from 'cross-fetch'
+jest.mock('node-fetch') // Replace all exports with empty mock functions
+import fetch, { Headers } from 'node-fetch'
 
 describe("No mock implementation", () => {
 
@@ -17,7 +17,7 @@ describe("No mock implementation", () => {
   test('Headers object has no methods',() => {
 
     const hdr = new Headers()
-
+    
     // Original Headers class has an 'append' method. But not this mocked instance
     expect(hdr).not.toHaveProperty('append')
   })

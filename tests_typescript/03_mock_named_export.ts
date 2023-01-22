@@ -1,9 +1,9 @@
-// All exported objects from cross-fetch are replaced with mock functions.
+// All exported objects from node-fetch are replaced with mock functions.
 // An implementation is only defined for the named export of 'Headers' class.
 
 import { jest, test, expect } from '@jest/globals'
-jest.mock('cross-fetch') // Replace all exports with empty mock functions
-import { Headers } from 'cross-fetch'
+jest.mock('node-fetch') // Replace all exports with empty mock functions
+import { Headers } from 'node-fetch'
 const mockedHeaders = jest.mocked(Headers) // Adds mock methods to the mock functions
 
 test('Mock Headers class', async () => {
