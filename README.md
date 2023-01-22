@@ -6,7 +6,7 @@ I am using the [cross-fetch](https://www.npmjs.com/package/cross-fetch), a libra
 
 # Why this?
 
-When reading the documentation on https://jestjs.io I found it too difficult to put all pieces together ( As of January 2023). Thefore I created these examples with the focus of simplicity.
+When reading the documentation on https://jestjs.io I found it too difficult to put all pieces together ( As of January 2023). Thefore I created these examples with the focus of simplicity. This is one way to do it. Maybe there are others.
 
 # Typescript examples
 
@@ -31,11 +31,6 @@ When reading the documentation on https://jestjs.io I found it too difficult to 
 npm install
 npm run test
 ```
-
-
-# Notes
-* You could use jest.spyOn(...) everywhere where method.mockImplementation() is used.
-* jest.spyOn()
 
 # References
 
