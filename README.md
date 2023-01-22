@@ -20,10 +20,10 @@ When reading the documentation on https://jestjs.io I found it too difficult to 
 
 # Javascript examples
 
-| File |
-|------|
-|[`02_mock_default_export.js`](tests_javascript/02_mock_default_export.js)
-|[`05_mostly_original_implementation.js`](tests_javascript/05_mostly_original_implementation.js)
+| File | Description |
+|------|-------------|
+|[`02_mock_default_export.js`](tests_javascript/02_mock_default_export.js) | See above |
+|[`05_mostly_original_implementation.js`](tests_javascript/05_mostly_original_implementation.js) | See above |
 
 # Usage
 
