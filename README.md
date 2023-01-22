@@ -15,8 +15,7 @@ When reading the documentation on https://jestjs.io I found it too difficult to 
 | [`01_no_mock_implementation.ts`](tests_typescript/01_no_mock_implementation.ts)               | Shows how `jest.mock('<module_name'>)` immediately mocks any exported object |
 | [`02_mock_default_export.ts`](tests_typescript/02_mock_default_export.ts)                | All exported objects from cross-fetch are mocked. An implementation is only defined for the default exported `fetch` function |
 | [`03_mock_named_export.ts`](tests_typescript/03_mock_named_export.ts)                  | All exported objects are mocked. An implementation is only defined for the named export of `Headers` class |
-| [`04_mock_partials.ts`](tests_typescript/04_mock_partials.ts)                      | All exported objects are mocked. The original implementation is restored for the `Response` class.
-A custom implementation has been defined for the default export `fetch` |
+| [`04_mock_partials.ts`](tests_typescript/04_mock_partials.ts)                      | All exported objects are mocked. The original implementation is restored for the `Response` class. A custom implementation has been defined for the default export `fetch` |
 | [`05_mostly_original_implementation.ts`](tests_typescript/05_mostly_original_implementation.ts) | All exported objects have their original implementation, except the default export `fetch`  |
 
 # Javascript examples
