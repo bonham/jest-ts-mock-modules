@@ -8,7 +8,7 @@
       "strict": true,
       "forceConsistentCasingInFileNames": true,
       "module": "ES2022",
-      "moduleResolution": "node",
+      "moduleResolution": "node16",
       "resolveJsonModule": true,
       "isolatedModules": true,
       "baseUrl": ".",
